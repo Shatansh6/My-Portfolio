@@ -610,7 +610,6 @@ body {
   .project-content {
     flex: unset;
   }
-
   .project-skills {
     justify-content: center;
   }
@@ -871,7 +870,9 @@ body {
     gap: 30px;
     height: auto;
   }
-
+.skill-chip{
+  padding: 8px 14px;
+}
   .hero-text h2 {
     font-size: 2.2rem;
   }
