@@ -39,6 +39,70 @@ body {
 /* ================= HEADER ANIMATIONS ================= */
 
 /* ================= HEADER BASE ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(11, 6, 19, 0.95);
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.35s ease;
+  z-index: 999;
+}
+
+.mobile-nav a {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mobile-nav a:hover {
+  color: var(--accent);
+}
+
+/* Active state */
+.mobile-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 
 .site-header {
   display: flex;
@@ -134,6 +198,7 @@ body {
  /* Hero Section */
 #hero {
   height: 100vh;
+  background: rgba(182, 106, 215, 0.08);;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -903,3 +968,12 @@ body {
 }
 
 
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

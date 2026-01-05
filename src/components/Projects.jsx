@@ -24,8 +24,8 @@ const projects = [
   desc: "A web application that enhances image quality using an AI-powered API. Users can upload an image, preview the original and enhanced versions side-by-side, and download the enhanced image with a smooth and intuitive user experience.",
   skills: ["React", "JavaScript", "Tailwind CSS", "REST API"],
   image: enhancedImage,
-  live: "https://your-live-link-here",
-  code: "https://github.com/your-username/image-enhancer",
+  live: "https://shatansh6.github.io/AI-ImageEnhancer/",
+  code: "https://github.com/Shatansh6/AI-ImageEnhancer.git",
 },
 ];
 
