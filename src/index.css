@@ -232,6 +232,18 @@ body {
   transition: 0.3s;
   box-shadow: 0 0 15px var(--accent);
 }
+.hero-btn{
+    display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  background: var(--accent);
+  color: #0f172a;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 15px var(--accent);
+}
 .btn:hover {
   background: var(--accent-dark);
   color: #fff;
@@ -871,6 +883,10 @@ body {
   .hero-btn {
     margin: 10px auto;
   }
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
 
   .socials {
     justify-content: center;
@@ -975,5 +991,17 @@ body {
 
   .hamburger {
     display: flex;
+  }
+  .hero-btn{
+  display: inline-block;
+  margin: 8px;
+  font-size: smaller;
+  background: var(--accent);
+  color: #0f172a;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 15px var(--accent);
   }
 }

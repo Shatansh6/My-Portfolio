@@ -15,10 +15,10 @@ const Hero = () => {
           Integration{" "}
         </div>
 
-        <a href="#projects" className="btn hero-btn">
+        <a href="#projects" className=" hero-btn">
           View My Work
         </a>
-        <a href="/ShatanshResume.pdf" className="btn hero-btn" download>
+        <a href="/ShatanshResume.pdf" className=" hero-btn" download>
           Download Resume
         </a>
 
